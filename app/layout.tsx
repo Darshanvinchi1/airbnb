@@ -53,6 +53,8 @@ export default async function RootLayout({
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5846422129610322"
+     crossOrigin="anonymous"></script>
     </html>
   )
 }
