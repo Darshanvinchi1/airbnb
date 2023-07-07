@@ -1,4 +1,5 @@
 import { Nunito } from 'next/font/google'
+import {Adsense} from '@ctrl/react-adsense';
 
 import './globals.css'
 import Navbar from './components/navbar/Navbar'
@@ -30,20 +31,16 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5846422129610322"
-          crossOrigin="anonymous"></script>
-      <ins className="adsbygoogle"
-          style={{display:"block"}}
-          data-ad-format="fluid"
-          data-ad-layout-key="+29+q3+r+21+4v"
-          data-ad-client="ca-pub-5846422129610322"
-          data-ad-slot="3402552484"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5846422129610322"
      crossOrigin="anonymous"></script>
       </head>
+      <Adsense
+        client="ca-pub-5846422129610322"
+        slot="3402552484"
+        style={{ display: 'block' }}
+        layout="+29+q3+r+21+4v"
+        format="fluid"
+      />
       <body className={font.className}>
         <ClientOnly>
           <ToasterProvider />
